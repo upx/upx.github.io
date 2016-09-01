@@ -1,0 +1,67 @@
+---
+layout: default
+title: {{ site.name }}
+---
+
+<div id="home">
+  <h1>Welcome</h1>
+      <p><strong>UPX</strong> is a free, portable, extendable, high-performance
+      <strong>executable packer</strong> for several executable formats.</p>
+      <p>Please also see the
+      <a href="https://en.wikipedia.org/wiki/UPX">Wikipedia entry</a>
+      for some more background info.</p>
+
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>Overview</h1>
+      <p>UPX achieves an
+      <strong>excellent compression ratio</strong> and offers
+      <strong>very fast decompression</strong>. Your executables suffer no memory overhead or
+      other drawbacks for most of the formats supported, because of in-place decompression. UPX
+      strengths in a nutshell:</p>
+      <ul>
+        <li>
+        <strong>excellent compression ratio</strong>: typically compresses better than
+        WinZip/zip/gzip, use UPX to decrease the size of your distribution!</li>
+        <li>
+        <strong>very fast decompression</strong>: ~10 MB/sec on an ancient Pentium 133, ~200
+        MB/sec on an Athlon XP 2000+.</li>
+        <li>
+        <strong>no memory overhead</strong> for your compressed executables because of in-place
+        decompression.</li>
+        <li>
+        <strong>safe</strong>: you can list, test and unpack your executables. Also, a checksum
+        of both the compressed and uncompressed file is maintained internally.</li>
+        <li>
+        <strong>universal</strong>: UPX can pack a number of executable formats.</li>
+        <li>
+        <strong>portable</strong>: UPX is written in portable endian-neutral C++.</li>
+        <li>
+        <strong>extendable</strong>: because of the class layout it's very easy to add new
+        executable formats or new compression algorithms.</li>
+        <li>
+        <strong>free</strong>: UPX is distributed with full source code under the GNU General
+        Public License v2+, with special exceptions granting the free usage for commercial
+        programs as stated in the
+        <a href="upx-license.html">UPX License Agreement</a>.</li>
+      </ul>
+      <p>You probably understand now why we call UPX the "Ultimate Packer for eXecutables".</p>
+
+  <h1>Copyright</h1>
+  <div class="TODO_TODO">
+    <p>UPX is Copyright &copy; 1996-2016
+    by
+    <a href="http://www.oberhumer.com/">Markus F.X.J. Oberhumer</a>,
+    <a href="mailto:ml1050@users.sourceforge.net">László Molnár</a> &amp;
+    <a href="http://www.bitwagon.com/">John F. Reiser</a>.</p>
+    <p><i>The term <b>UPX</b> is a shorthand for the
+    Ultimate Packer for eXecutables. All trademarks, brands, and names
+    are the property of their respective owners.</i></p>
+  </div>
+
+</div>

@@ -1,0 +1,26 @@
+# info: the website is automatically re-built after each push
+#   of this git repository
+#
+# see:
+#   https://pages.github.com/
+#   https://help.github.com/articles/about-github-pages-and-jekyll/
+
+title:        UPX
+tagline:      the Ultimate Packer for eXecutables
+baseurl:      ""
+paginate:     1
+weburl:       https://upx.github.io
+
+author:
+  name:       The UPX Team
+  url:        https://github.com/upx
+
+gems:
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
