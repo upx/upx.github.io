@@ -15,6 +15,9 @@ author:
   name:       The UPX Team
   url:        https://github.com/upx
 
+exclude:
+  - Makefile
+
 gems:
   - jekyll-paginate
   - jekyll-redirect-from
