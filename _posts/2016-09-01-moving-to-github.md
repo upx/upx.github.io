@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Moving to github"
+title:  "Moving to GitHub"
 date:   2016-09-01 17:50:00
 categories: main
 ---
