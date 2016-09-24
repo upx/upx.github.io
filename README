@@ -1,11 +1,22 @@
-INFO: the website is automatically re-built after each push
-  of this git repository
+                 ooooo     ooo ooooooooo.   ooooooo  ooooo
+                 `888'     `8' `888   `Y88.  `8888    d8'
+                  888       8   888   .d88'    Y888..8P
+                  888       8   888ooo88P'      `8888'
+                  888       8   888            .8PY888.
+                  `88.    .8'   888           d8'  `888b
+                    `YbodP'    o888o        o888o  o88888o
 
-See:
+
+                    The Ultimate Packer for eXecutables
+   Copyright (c) 1996-2016 Markus Oberhumer, Laszlo Molnar & John Reiser
+                           https://upx.github.io
+
+
+INFO: the UPX website is automatically re-built after each push
+of this git repository. See
   https://pages.github.com/
   https://help.github.com/articles/about-github-pages-and-jekyll/
 
-
-This website is based on the Cayman theme by Jason Long. See:
+This website is based on the Cayman theme by Jason Long. See
   https://github.com/jasonlong/cayman-theme
   https://github.com/pietromenna/jekyll-cayman-theme
