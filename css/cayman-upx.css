@@ -4,7 +4,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Chivo, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #606c71; }
@@ -75,10 +75,12 @@ background: linear-gradient(120deg, #5C258D , #4389A2); /* W3C, IE 10+/ Edge, Fi
 
 .project-name {
   margin-top: 0;
-  margin-bottom: 0.1rem; }
+  margin-bottom: 0.1rem;
+  font-weight: normal; font-family: Monoton, Helvetica, Arial, sans-serif;
+  }
   @media screen and (min-width: 64em) {
     .project-name {
-      font-size: 3.25rem; } }
+      font-size: 6.00rem; } }
   @media screen and (min-width: 42em) and (max-width: 64em) {
     .project-name {
       font-size: 2.25rem; } }
