@@ -1,5 +1,7 @@
-# cleancss 3.4.19 -- https://github.com/jakubpawlowicz/clean-css
-CLEANCSS = $(HOME)/node_modules/clean-css/bin/cleancss
+# clean-css 4.0.9 -- https://github.com/jakubpawlowicz/clean-css
+#   npm install clean-css-cli
+
+CLEANCSS ?= $(HOME)/code/nodejs/node_modules/clean-css-cli/bin/cleancss
 CLEANCSS_FLAGS += --skip-advanced
 #CLEANCSS_FLAGS += --keep-line-breaks
 
