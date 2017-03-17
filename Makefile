@@ -1,9 +1,9 @@
-# clean-css 4.0.9 -- https://github.com/jakubpawlowicz/clean-css
+# clean-css 4.0.9 -- https://github.com/jakubpawlowicz/clean-css-cli
 #   npm install clean-css-cli
 
 CLEANCSS ?= $(HOME)/code/nodejs/node_modules/clean-css-cli/bin/cleancss
-CLEANCSS_FLAGS += --skip-advanced
-#CLEANCSS_FLAGS += --keep-line-breaks
+CLEANCSS_FLAGS += -O1
+CLEANCSS_FLAGS += --compatibility ie7
 
 ifneq ($(wildcard $(CLEANCSS)),)
 
