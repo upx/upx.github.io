@@ -5,11 +5,12 @@ htitle: "UPX: the Ultimate Packer for eXecutables - Homepage"
 
 <div id="home">
   <h1>Welcome</h1>
-      <p><strong>UPX</strong> is a free, portable, extendable, high-performance
+      <p><strong>UPX</strong> is a free, secure, portable, extendable, high-performance
       <strong>executable packer</strong> for several executable formats.</p>
       <p>Please also see the
       <a href="https://en.wikipedia.org/wiki/UPX">Wikipedia entry</a>
-      for some more background info.</p>
+      for some more background info about UPX and
+      <a href="https://en.wikipedia.org/wiki/Executable_compression">executable compression</a>.</p>
 
   <h1>Blog Posts</h1>
   <ul class="posts">
@@ -22,35 +23,40 @@ htitle: "UPX: the Ultimate Packer for eXecutables - Homepage"
       <p>UPX achieves an
       <strong>excellent compression ratio</strong> and offers
       <strong>very fast decompression</strong>. Your executables suffer no memory overhead or
-      other drawbacks for most of the formats supported, because of in-place decompression. UPX
-      strengths in a nutshell:</p>
+      other drawbacks for most of the formats supported, because of in-place decompression.</p>
+      </p>UPX strengths in a nutshell:</p>
       <ul>
         <li>
-        <strong>excellent compression ratio</strong>: typically compresses better than
-        WinZip/zip/gzip, use UPX to decrease the size of your distribution!</li>
+        <strong>secure</strong>: as UPX is documented Open Source since many years any relevant
+        Security/Antivirus software is able to peek inside UPX compressed apps to verify them</li>
         <li>
-        <strong>very fast decompression</strong>: ~10 MB/sec on an ancient Pentium 133 (1997), ~200
-        MB/sec on an Athlon XP 2000+ (2002), more than 1000 MB/sec on modern desktop machines.</li>
+        <strong>excellent compression ratio</strong>: typically compresses better than
+        Zip, use UPX to decrease the size of your distribution!</li>
+        <li>
+        <strong>very fast decompression</strong>: more than 1000 MB/sec on any reasonably modern
+        machine</li>
         <li>
         <strong>no memory overhead</strong> for your compressed executables because of in-place
-        decompression.</li>
+        decompression</li>
         <li>
-        <strong>safe</strong>: you can list, test and unpack your executables. Also, a checksum
+        <strong>safe</strong>: you can list, test and <u>unpack</u>
+        your executables. Also, a checksum
         of both the compressed and uncompressed file is maintained internally.</li>
         <li>
-        <strong>universal</strong>: UPX can pack a number of executable formats.</li>
+        <strong>universal</strong>: UPX can pack a number of executable formats, including
+        Windows programs and DLLs, macOS apps and Linux executables</li>
         <li>
-        <strong>portable</strong>: UPX is written in portable endian-neutral C++.</li>
+        <strong>portable</strong>: UPX is written in portable endian-neutral C++</li>
         <li>
         <strong>extendable</strong>: because of the class layout it's very easy to add new
-        executable formats or new compression algorithms.</li>
+        executable formats or new compression algorithms</li>
         <li>
         <strong>free</strong>: UPX is distributed with full source code under the GNU General
         Public License v2+, with special exceptions granting the free usage for commercial
         programs as stated in the
-        <a href="upx-license.html">UPX License Agreement</a>.</li>
+        <a href="upx-license.html">UPX License Agreement</a></li>
       </ul>
-      <p>You probably understand now why we call UPX the "Ultimate Packer for eXecutables".</p>
+      <p>You probably understand now why we call UPX the "Ultimate Packer for eXecutables"</p>
 
   <h1>Copyright</h1>
   <div class="TODO_TODO">
