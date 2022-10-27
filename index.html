@@ -12,6 +12,13 @@ htitle: "UPX: the Ultimate Packer for eXecutables - Homepage"
       for some more background info about UPX and
       <a href="https://en.wikipedia.org/wiki/Executable_compression">executable compression</a>.</p>
 
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
   <h1>Introduction</h1>
   <p><strong>UPX</strong> is an advanced executable file compressor. UPX will typically
   reduce the file size of programs and DLLs by around 50%-70%, thus
@@ -29,13 +36,6 @@ htitle: "UPX: the Ultimate Packer for eXecutables - Homepage"
   Public License. Full source code is available.</p>
 
   <p><strong>UPX</strong> may be distributed and used freely, even with commercial applications.</p>
-
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
 
   <h1>Overview</h1>
       <p>UPX strengths in a nutshell:</p>
@@ -67,9 +67,9 @@ htitle: "UPX: the Ultimate Packer for eXecutables - Homepage"
         <li>
         <strong>free</strong>: UPX is distributed with full source code under the terms of the
         <a href="upx-COPYING.txt">GNU General Public License v2+</a>;
-        either under the pure GPLv2+,
-        or (at your option) under the GPLv+2 with special exceptions and
-        restrictions granting the free usage for commercial programs as stated in the
+        either under the pure GPLv2+, or (at your option) under the GPLv+2 with special
+        exceptions and restrictions granting the free usage for all binaries
+        including commercial programs as stated in the
         <a href="upx-license.html">UPX License Agreement</a></li>
       </ul>
       <p>You probably understand now why we call UPX the "Ultimate Packer for eXecutables"</p>

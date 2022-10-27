@@ -366,6 +366,8 @@ Changes in 0.99 (25 Feb 2000)
   * dos/com and dos/sys: fixed a bad decompressor problem
   * linux/386: the counter for the progress indicator was off by one
 
+==================================================================
+
 Changes in 0.94 (06 Dec 1999)
   * win32/pe: the stub now calls ExitProcess in case of import errors
   * under DOS and Windows, the environment variable UPX now accepts
