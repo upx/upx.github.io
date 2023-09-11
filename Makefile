@@ -3,6 +3,9 @@
 MINIFY = minify-2.12.8
 
 all: css/cayman-upx-min.css
+all: css/fa-brands-min.css
+all: css/fa-regular-min.css
+all: css/fa-solid-min.css
 all: css/fonts-min.css
 all: css/modern-normalize-min.css
 all: css/normalize-min.css
