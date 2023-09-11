@@ -1,18 +1,15 @@
-# clean-css 4.0.9 -- https://github.com/jakubpawlowicz/clean-css-cli
-#   npm install clean-css-cli
+# minify 2.12.8 - https://github.com/tdewolff/minify
 
-CLEANCSS ?= $(HOME)/code/nodejs/node_modules/clean-css-cli/bin/cleancss
-CLEANCSS_FLAGS += -O1
-CLEANCSS_FLAGS += --compatibility ie7
+MINIFY = minify-2.12.8
 
-ifneq ($(wildcard $(CLEANCSS)),)
-
-all: css/normalize-min.css
 all: css/cayman-upx-min.css
+all: css/fonts-min.css
+all: css/modern-normalize-min.css
+all: css/normalize-min.css
 
 css/%-min.css: css/%.css $(MAKEFILE_LIST)
-	$(CLEANCSS) $(CLEANCSS_FLAGS) -o $@ $<
+	$(MINIFY) -o $@ $<
 
-clean:: ; rm -f css/*-min.css
+clean: .PHONY ; rm -f css/*-min.css
 
-endif
+.PHONY: PHONY
