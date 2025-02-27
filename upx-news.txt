@@ -2,6 +2,15 @@
 User visible changes for UPX
 ==================================================================
 
+Changes in 5.0.0 (20 Feb 2025):
+  * ELF: use of memfd_create supports Enforcing mode of SELinux
+  * ELF: two-step de-compression enables future per-PT_LOAD work
+  * ELF: --unmap-all-pages completely avoids /proc/self/exe
+  * ELF: PT_MIPS_ABIFLAGS is now forwarded into the compressed output;
+    qemu-mips can choose the right floating-point emulation
+  * ELF: many minor internal changes fix nits revealed by fuzzing
+  * bug fixes - see https://github.com/upx/upx/milestone/18
+
 Changes in 4.2.4 (09 May 2024):
   * bug fixes - see https://github.com/upx/upx/milestone/17
 
